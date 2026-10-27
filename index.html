@@ -3,249 +3,283 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FAQ Review - H4SX Store</title>
+<title>Terma &amp; Syarat Review - H4SX Store</title>
+<script>document.documentElement.className+=' js';</script>
 <style>
-:root{--bg:#f0f9ff;--card:#fff;--text:#14182b;--muted:#636b82;--p1:#0b8fd6;--p2:#38bdf8;--border:#d9eefb;--soft:#e3f4ff;--bad:#fff0f0;--badt:#d93a3f;--ok:#e9f9f0;--okt:#1f9d5c;--warn:#fff6e6;--warnt:#b97708;--shadow:0 8px 28px rgba(14,130,200,.10)}
-@media (prefers-color-scheme:dark){:root{--bg:#07131d;--card:#0d1e2d;--text:#eaeefc;--muted:#97a1bd;--border:#1b3448;--soft:#0f2b40;--bad:#2b1519;--badt:#ff7b80;--ok:#112a1d;--okt:#4fd391;--warn:#2b2110;--warnt:#f0b44c;--shadow:0 8px 28px rgba(0,0,0,.35)}}
-*{box-sizing:border-box}
+:root{--bg:#f2faff;--card:#fff;--tx:#0d2236;--mu:#58708a;--ln:#dcedf9;--s1:#0284c7;--s2:#38bdf8;--s3:#e0f3ff;--rd:#dc2638;--rd2:#fff0f2;--gn:#14925a;--gn2:#e8f8f0;--am:#a86a00;--am2:#fff6e3;--sh:0 2px 4px rgba(2,100,160,.04),0 14px 34px rgba(2,100,160,.09)}
+@media (prefers-color-scheme:dark){:root{--bg:#06121c;--card:#0c1d2c;--tx:#e8f2fa;--mu:#8fa8bf;--ln:#1a3348;--s1:#38bdf8;--s2:#0ea5e9;--s3:#0d2a3f;--rd:#ff7a86;--rd2:#2b1419;--gn:#4fd391;--gn2:#10291c;--am:#f0b64e;--am2:#2a2110;--sh:0 14px 34px rgba(0,0,0,.4)}}
+*{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
-nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.nav-in{max-width:1000px;margin:0 auto;padding:12px 18px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:1.25rem;letter-spacing:.5px}
-.logo span{background:linear-gradient(90deg,var(--p1),var(--p2));-webkit-background-clip:text;background-clip:text;color:transparent}
-.nav-links{display:flex;gap:8px;align-items:center}.nav-links a{font-size:.82rem;font-weight:600;padding:7px 14px;border-radius:999px;text-decoration:none;color:var(--text)}.nav-links a.main{background:var(--soft);color:var(--p1)}.nav-links a.wa{background:#25d366;color:#fff}.hero .actions{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}.hero .btn2{display:inline-block;background:rgba(255,255,255,.18);color:#fff;font-weight:700;padding:12px 24px;border-radius:999px;text-decoration:none;border:1px solid rgba(255,255,255,.5)}.a a,footer a{color:var(--p1);font-weight:600}@media(max-width:560px){.nav-links a.hide{display:none}}
-.pill{font-size:.78rem;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--soft);color:var(--p1)}
-.hero{background:linear-gradient(135deg,#0284c7 0%,#38bdf8 60%,#7dd3fc 100%);color:#fff;text-align:center;padding:56px 18px 84px}
-.hero small{display:inline-block;background:rgba(255,255,255,.2);padding:5px 14px;border-radius:999px;font-weight:600;font-size:.8rem;margin-bottom:14px}
-.hero h1{margin:0 0 10px;font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.2}
-.hero p{margin:0 auto;max-width:560px;opacity:.92}
-.wrap{max-width:1000px;margin:0 auto;padding:0 18px 60px}
-.trust{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:-46px;margin-bottom:34px}
-.t{background:var(--card);border-radius:16px;padding:16px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;border:1px solid var(--border)}
-.t i{font-style:normal;font-size:1.6rem;width:46px;height:46px;border-radius:12px;background:var(--soft);display:grid;place-items:center;flex-shrink:0}
-.t b{display:block;font-size:.95rem}
-.t span{font-size:.82rem;color:var(--muted)}
-h2{font-size:1.35rem;margin:36px 0 6px}
-.sub{color:var(--muted);margin:0 0 16px}
-.rules{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.rule{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:var(--shadow)}
-.rule .ic{font-size:1.8rem;width:54px;height:54px;border-radius:14px;background:var(--bad);display:grid;place-items:center;margin-bottom:12px}
-.rule h3{margin:0 0 6px;font-size:1.05rem}
-.rule p{margin:0 0 12px;color:var(--muted);font-size:.93rem}
-.badge{display:inline-block;font-size:.78rem;font-weight:700;padding:4px 10px;border-radius:8px;background:var(--bad);color:var(--badt)}
-.flow{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));counter-reset:s}
-.fs{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;position:relative;box-shadow:var(--shadow)}
-.fs::before{counter-increment:s;content:counter(s);position:absolute;top:-12px;left:16px;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--p1),var(--p2));color:#fff;font-weight:700;display:grid;place-items:center;font-size:.85rem}
-.fs b{display:block;margin-bottom:4px}
-.fs span{font-size:.9rem;color:var(--muted)}
-details{background:var(--card);border:1px solid var(--border);border-radius:14px;margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
-summary{cursor:pointer;padding:16px 18px;font-weight:600;list-style:none;display:flex;gap:12px;align-items:center}
-summary::-webkit-details-marker{display:none}
-summary .q{width:34px;height:34px;border-radius:10px;background:var(--soft);display:grid;place-items:center;flex-shrink:0}
-summary .t2{flex:1}
-summary::after{content:"+";font-size:1.4rem;color:var(--p1);font-weight:400}
-details[open] summary::after{content:"–"}
-details[open]{border-color:var(--p1)}
-.a{padding:0 18px 18px 64px;color:var(--muted)}
-.a p{margin:0 0 10px}
-.a ul{margin:0 0 10px;padding-left:18px}
-.a li{margin-bottom:3px}
-.a strong{color:var(--text)}
-.box{padding:10px 14px;border-radius:10px;font-size:.92rem;margin-top:8px}
-.box.bad{background:var(--bad);color:var(--badt)}
-.box.warn{background:var(--warn);color:var(--warnt)}
-.box.ok{background:var(--ok);color:var(--okt)}
-.ladder{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-.lv{border-radius:14px;padding:16px;border:1px solid var(--border);background:var(--card);box-shadow:var(--shadow)}
-.lv em{font-style:normal;font-size:.75rem;font-weight:700;color:var(--muted);letter-spacing:.6px}
-.lv b{display:block;margin:4px 0}
-.lv.hot{background:var(--bad);border-color:var(--badt)}
-.report{margin-top:36px;display:grid;gap:18px;grid-template-columns:1.2fr 1fr;align-items:center;background:var(--card);border:1px solid var(--border);border-radius:22px;padding:26px;box-shadow:var(--shadow)}.report h2{margin:0 0 8px}.report p{margin:0 0 10px;color:var(--muted)}.report ol{margin:0;padding-left:20px;color:var(--muted)}.report ol b{color:var(--text)}.mock{background:var(--bg);border:1px dashed var(--p1);border-radius:16px;padding:16px}.mock .rv{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px;font-size:.88rem;color:var(--muted)}.mock .rv b{color:var(--text);display:block}.lapor{display:inline-flex;align-items:center;gap:6px;margin-top:10px;background:var(--bad);color:var(--badt);font-weight:700;font-size:.82rem;padding:6px 14px;border-radius:999px;border:1px solid var(--badt)}.mock small{display:block;margin-top:10px;color:var(--muted);font-size:.78rem;text-align:center}@media(max-width:700px){.report{grid-template-columns:1fr}}
-.alert18{margin-bottom:30px;border-radius:20px;padding:22px 24px;background:linear-gradient(135deg,#b91c1c,#ef4444);color:#fff;box-shadow:var(--shadow);display:flex;gap:16px;align-items:flex-start}.alert18 .ico{font-size:2rem;line-height:1}.alert18 h3{margin:0 0 6px;font-size:1.1rem;letter-spacing:.4px}.alert18 p{margin:0 0 6px;opacity:.95;font-size:.93rem}.alert18 p:last-child{margin:0}.rule.strict{border-color:var(--badt);background:var(--bad)}.rule.strict .ic{background:var(--card)}.mock2{margin-top:10px;background:var(--ok);border:1px solid var(--okt);border-radius:12px;padding:12px;font-size:.86rem;color:var(--okt)}.mock2 b{display:block}.cta{margin-top:44px;text-align:center;border-radius:22px;padding:34px 20px;color:#fff;background:linear-gradient(135deg,#0284c7,#38bdf8)}
-.cta h2{margin:0 0 6px}
-.cta p{margin:0 0 16px;opacity:.92}
-.btn{display:inline-block;background:#fff;color:#0369a1;font-weight:700;padding:12px 26px;border-radius:999px;text-decoration:none}
-footer{text-align:center;color:var(--muted);font-size:.85rem;padding:26px 18px}
-@media(max-width:560px){.a{padding-left:18px}}
+body{background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.7;overflow-x:hidden}
+a{color:var(--s1);font-weight:600;text-decoration:none}
+a:hover{text-decoration:underline}
+/* reveal */
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:var(--card);border-bottom:1px solid var(--ln)}
+.nv{max-width:1000px;margin:0 auto;padding:13px 20px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.logo{font-weight:800;font-size:1.2rem;letter-spacing:.05em}
+.logo span{color:var(--s1)}
+.nl{display:flex;gap:8px;align-items:center}
+.nl a{font-size:.85rem;padding:8px 15px;border-radius:99px;color:var(--tx)}
+.nl a.m{background:var(--s3);color:var(--s1)}
+.nl a.w{background:#25d366;color:#fff}
+.nl a:hover{text-decoration:none;transform:translateY(-1px)}
+/* hero */
+.hero{position:relative;overflow:hidden;text-align:center;color:#fff;padding:76px 20px 150px;background:linear-gradient(120deg,#0369a1,#0ea5e9,#38bdf8,#0284c7);background-size:300% 300%;animation:bg 14s ease infinite}
+@keyframes bg{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+.bl{position:absolute;border-radius:50%;background:rgba(255,255,255,.14);animation:fl 9s ease-in-out infinite}
+.b1{width:300px;height:300px;top:-90px;right:-70px}
+.b2{width:200px;height:200px;bottom:30px;left:-60px;animation-delay:-3s}
+.b3{width:90px;height:90px;top:90px;left:14%;animation-delay:-6s}
+@keyframes fl{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-26px) scale(1.06)}}
+.hi{position:relative;max-width:660px;margin:0 auto}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.18em;padding:7px 16px;border-radius:99px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.45);animation:up .8s both}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.12;letter-spacing:-.03em;margin:18px 0 14px;animation:up .8s .12s both}
+.hero p{font-size:1.05rem;opacity:.94;max-width:500px;margin:0 auto;animation:up .8s .24s both}
+.ac{margin-top:30px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;animation:up .8s .36s both}
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.btn{display:inline-block;padding:14px 30px;border-radius:99px;font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-3px);text-decoration:none}
+.btn.w{background:#fff;color:#0369a1;box-shadow:0 10px 24px rgba(2,50,100,.28)}
+.btn.g{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.55)}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:70px;display:block}
+.wave path{fill:var(--bg)}
+/* layout */
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px 40px}
+.sec{margin-top:64px}
+.hd{margin-bottom:24px}
+.hd small{font-size:.74rem;font-weight:700;letter-spacing:.16em;color:var(--s1)}
+.hd h2{font-size:clamp(1.5rem,4vw,2rem);letter-spacing:-.025em;line-height:1.2;margin-top:4px}
+.hd p{color:var(--mu);margin-top:6px}
+/* trust */
+.tr{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));margin-top:-86px;position:relative;z-index:2}
+.tc{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:18px;display:flex;gap:14px;align-items:center;box-shadow:var(--sh);transition:transform .25s}
+.tc:hover{transform:translateY(-5px)}
+.ic{width:48px;height:48px;border-radius:14px;background:var(--s3);display:grid;place-items:center;font-size:1.5rem;flex-shrink:0}
+.tc b{display:block;font-size:.96rem;line-height:1.3}
+.tc span{font-size:.82rem;color:var(--mu);line-height:1.4;display:block}
+/* steps */
+.st{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(170px,1fr))}
+.sc{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:26px 18px 18px;position:relative;transition:transform .25s,box-shadow .25s}
+.sc:hover{transform:translateY(-5px);box-shadow:var(--sh)}
+.sn{position:absolute;top:-14px;left:18px;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--s1),var(--s2));color:#fff;font-weight:800;font-size:.85rem;display:grid;place-items:center;box-shadow:0 6px 14px rgba(2,132,199,.4)}
+.sc b{display:block;margin-bottom:4px}
+.sc span{font-size:.86rem;color:var(--mu);line-height:1.55;display:block}
+/* 18+ */
+.al{display:flex;gap:18px;align-items:center;background:linear-gradient(135deg,#b91c1c,#ef4444);color:#fff;border-radius:22px;padding:24px 26px;box-shadow:0 14px 34px rgba(185,28,28,.28)}
+.al .e{font-size:2.2rem;width:64px;height:64px;flex-shrink:0;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.18);animation:pl 2s ease-out infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(255,255,255,.55)}100%{box-shadow:0 0 0 20px rgba(255,255,255,0)}}
+.al h3{font-size:.95rem;letter-spacing:.08em;margin-bottom:6px}
+.al p{font-size:.93rem;opacity:.96;margin-bottom:4px}
+.al p:last-child{margin:0}
+/* rules */
+.rl{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.rc{background:var(--card);border:1px solid var(--ln);border-radius:22px;padding:24px;transition:transform .25s,box-shadow .25s}
+.rc:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.rc .ic{background:var(--rd2);margin-bottom:16px;width:56px;height:56px;font-size:1.7rem}
+.rc h3{font-size:1.04rem;margin-bottom:8px;letter-spacing:-.01em}
+.rc p{font-size:.91rem;color:var(--mu);line-height:1.65;margin-bottom:14px}
+.bd{display:inline-block;font-size:.74rem;font-weight:700;padding:5px 12px;border-radius:99px;background:var(--rd2);color:var(--rd)}
+.rc.x{border-color:var(--rd);background:var(--rd2)}
+.rc.x .ic{background:var(--card)}
+/* accordion */
+.it{background:var(--card);border:1px solid var(--ln);border-radius:18px;margin-bottom:12px;transition:border-color .25s,box-shadow .25s}
+.it:hover{box-shadow:var(--sh)}
+.it.open{border-color:var(--s1)}
+.ab{width:100%;display:flex;align-items:center;gap:14px;text-align:left;background:none;border:0;color:var(--tx);font:inherit;font-weight:600;padding:18px 20px;cursor:pointer}
+.ab .ic{width:40px;height:40px;font-size:1.1rem}
+.ab .t{flex:1}
+.ab::after{content:"+";font-size:1.5rem;font-weight:400;color:var(--s1);transition:transform .3s}
+.it.open .ab::after{transform:rotate(135deg)}
+.ap{display:grid;grid-template-rows:0fr;transition:grid-template-rows .4s ease}
+.it.open .ap{grid-template-rows:1fr}
+.ap>div{overflow:hidden}
+.ai{padding:0 22px 22px 74px;color:var(--mu);font-size:.95rem}
+.ai p{margin-bottom:10px}
+.ai ul{padding-left:20px;margin-bottom:10px}
+.ai li{margin-bottom:5px}
+.ai strong{color:var(--tx)}
+.bx{padding:12px 16px;border-radius:12px;font-size:.9rem;margin-top:10px;line-height:1.6}
+.bx.r{background:var(--rd2);color:var(--rd)}
+.bx.g{background:var(--gn2);color:var(--gn)}
+.bx.a{background:var(--am2);color:var(--am)}
+/* report */
+.rp{display:grid;gap:26px;grid-template-columns:1.1fr 1fr;align-items:center;background:var(--card);border:1px solid var(--ln);border-radius:26px;padding:32px;box-shadow:var(--sh)}
+.rp h2{font-size:1.5rem;letter-spacing:-.02em;margin-bottom:8px}
+.rp p{color:var(--mu);margin-bottom:12px}
+.rp ol{padding-left:20px;color:var(--mu);line-height:1.95}
+.rp ol b{color:var(--tx)}
+.mk{background:var(--bg);border:1.5px dashed var(--s1);border-radius:20px;padding:18px}
+.rv2{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:14px;font-size:.88rem;color:var(--mu)}
+.rv2 b{color:var(--tx);display:block}
+.lp{display:inline-block;margin-top:10px;background:var(--rd2);color:var(--rd);border:1px solid var(--rd);font-weight:700;font-size:.8rem;padding:6px 14px;border-radius:99px;animation:bt 2.4s ease-in-out infinite}
+@keyframes bt{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+.ok{margin-top:12px;background:var(--gn2);border:1px solid var(--gn);color:var(--gn);border-radius:14px;padding:12px 14px;font-size:.86rem}
+.ok b{display:block}
+/* ladder */
+.ld{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.lc{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:20px;transition:transform .25s}
+.lc:hover{transform:translateY(-5px)}
+.lc em{font-style:normal;font-size:.7rem;font-weight:700;letter-spacing:.14em;color:var(--mu)}
+.lc b{display:block;margin:6px 0 4px}
+.lc span{font-size:.87rem;color:var(--mu);line-height:1.55;display:block}
+.lc.h{background:var(--rd2);border-color:var(--rd)}
+/* cta */
+.cta{position:relative;overflow:hidden;text-align:center;color:#fff;border-radius:30px;padding:54px 22px;margin-top:70px;background:linear-gradient(120deg,#0369a1,#0ea5e9,#38bdf8);background-size:250% 250%;animation:bg 12s ease infinite}
+.cta::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.13);top:-110px;right:-60px;animation:fl 8s ease-in-out infinite}
+.cta>*{position:relative}
+.cta h2{font-size:1.8rem;letter-spacing:-.02em;margin-bottom:8px}
+.cta p{opacity:.94;margin-bottom:22px}
+footer{text-align:center;color:var(--mu);font-size:.85rem;line-height:1.9;padding:34px 20px}
+@media(max-width:720px){.rp{grid-template-columns:1fr;padding:24px}.ai{padding-left:22px}.hero{padding:56px 20px 130px}.nl a.h{display:none}.al{flex-direction:column;text-align:center}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<nav><div class="nav-in"><div class="logo">H4SX <span>STORE</span></div><div class="nav-links"><a class="hide" href="https://www.h4sxmy.xyz" target="_blank" rel="noopener">Laman Utama</a><a class="main" href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">Review</a><a class="wa" href="https://wa.me/60193263016" target="_blank" rel="noopener">WhatsApp Admin</a></div></div></nav>
+<nav><div class="nv">
+  <div class="logo">H4SX <span>STORE</span></div>
+  <div class="nl"><a class="h" href="https://www.h4sxmy.xyz" target="_blank" rel="noopener">Laman Utama</a><a class="m" href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">Review</a><a class="w" href="https://wa.me/60193263016" target="_blank" rel="noopener">WhatsApp Admin</a></div>
+</div></nav>
 
 <header class="hero">
-  <small>FAQ &amp; PANDUAN KOMUNITI</small>
-  <h1>Panduan Review H4SX Store</h1>
-  <p>Kongsi pengalaman sebenar anda dengan selamat. Baca peraturan ringkas di bawah sebelum menghantar review.</p>
-  <div class="actions"><a class="btn" href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">Tulis Review</a><a class="btn2" href="https://wa.me/60193263016" target="_blank" rel="noopener">Hubungi Admin</a></div>
+  <div class="bl b1"></div><div class="bl b2"></div><div class="bl b3"></div>
+  <div class="hi">
+    <span class="tag">TERMA &amp; SYARAT</span>
+    <h1>Terma &amp; Syarat Review H4SX Store</h1>
+    <p>Dengan menghantar review, anda dianggap telah membaca dan bersetuju dengan terma di bawah.</p>
+    <div class="ac"><a class="btn w" href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">Tulis Review</a><a class="btn g" href="https://wa.me/60193263016" target="_blank" rel="noopener">Hubungi Admin</a></div>
+  </div>
+  <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,80 480,0 720,30 C960,60 1200,70 1440,20 L1440,70 L0,70 Z"/></svg>
 </header>
 
-<div class="wrap">
+<main class="wrap">
 
-  <div class="trust">
-    <div class="t"><i>🛡️</i><div><b>Dipantau Moderator</b><span>Review disemak &amp; boleh diedit</span></div></div>
-    <div class="t"><i>🔒</i><div><b>Data Anda Selamat</b><span>Maklumat peribadi dilindungi</span></div></div>
-    <div class="t"><i>🔑</i><div><b>Kod Review Wajib</b><span>Diberi admin selepas order</span></div></div>
-    <div class="t"><i>⭐</i><div><b>Review Jujur</b><span>Kritikan sopan dialu-alukan</span></div></div>
+  <div class="tr">
+    <div class="tc rv"><div class="ic">🔑</div><div><b>Kod Review Wajib</b><span>Diberi admin selepas order</span></div></div>
+    <div class="tc rv" style="--d:.1s"><div class="ic">🛡️</div><div><b>Dipantau Moderator</b><span>Boleh edit atau padam</span></div></div>
+    <div class="tc rv" style="--d:.2s"><div class="ic">🔒</div><div><b>Data Anda Selamat</b><span>Maklumat peribadi dilindungi</span></div></div>
   </div>
 
-  <div class="alert18"><div class="ico">🔞</div><div>
-    <h3>AMARAN KERAS: GAMBAR &amp; VIDEO</h3>
-    <p>Berkongsi gambar atau video berunsur 18+ adalah <strong>dilarang sama sekali</strong> dan akan dipadam.</p>
-    <p>Bahagian gambar dan video adalah yang <strong>paling tegas</strong>. Pihak moderasi berhak memadam gambar atau video yang melanggar peraturan secara <strong>kekal</strong>.</p>
-  </div></div>
-
-  <h2>🚫 Peraturan Utama</h2>
-  <p class="sub">Perkara berikut tidak dibenarkan dalam ruang review.</p>
-  <div class="rules">
-    <div class="rule"><div class="ic">🔗</div><h3>Dilarang Kongsi Link</h3><p>Tiada pautan ke website, kedai, group atau platform lain (WhatsApp, Telegram, Discord, FB, IG, TikTok).</p><span class="badge">Link dibuang oleh moderator</span></div>
-    <div class="rule"><div class="ic">🎮</div><h3>Dilarang Promote Akaun Game</h3><p>Tiada jual, trade, joki atau iklan akaun game. Ruang ini bukan tempat jual beli.</p><span class="badge">Lebih 2x = Ban review</span></div>
-    <div class="rule"><div class="ic">🪪</div><h3>Dilarang Share Maklumat Peribadi</h3><p>Tiada nombor telefon, alamat, IC, maklumat bank, email, password, OTP atau ID login game.</p><span class="badge">Dibuang / diedit serta-merta</span></div>
-    <div class="rule strict"><div class="ic">🔞</div><h3>Dilarang Gambar / Video 18+</h3><p>Gambar atau video berunsur 18+ atau tidak sesuai tidak dibenarkan langsung dalam review.</p><span class="badge">Dipadam kekal</span></div>
-  </div>
-
-  <h2>🔎 Bagaimana Review Anda Diproses?</h2>
-  <p class="sub">Kod review diperlukan. Review akan lulus automatik dan disemak oleh moderator.</p>
-  <div class="flow" style="margin-top:22px">
-    <div class="fs"><b>Order Selesai</b><span>Pastikan pesanan anda telah siap diproses.</span></div>
-    <div class="fs"><b>Minta Kod Review</b><span>Dapatkan kod daripada admin melalui <a href="https://wa.me/60193263016" target="_blank" rel="noopener" style="color:var(--p1);font-weight:600">WhatsApp</a>.</span></div>
-    <div class="fs"><b>Hantar Review</b><span>Masukkan kod dan tulis review di halaman review.</span></div>
-    <div class="fs"><b>Lulus Automatik</b><span>Review terus dipaparkan jika moderator belum sempat menyemak.</span></div>
-    <div class="fs"><b>Disemak Moderator</b><span>Moderator boleh edit atau padam bahagian yang melanggar peraturan.</span></div>
-  </div>
-
-  <h2>💬 Soalan Lazim</h2>
-  <p class="sub">Klik soalan untuk melihat jawapan.</p>
-
-  <details open>
-    <summary><span class="q">🔑</span><span class="t2">Bagaimana cara untuk membuat review?</span></summary>
-    <div class="a">
-      <p>Untuk menulis review di H4SX Review, anda memerlukan <strong>kod review</strong> yang diberikan oleh admin <strong>selepas order anda selesai</strong>.</p>
-      <ul><li>Pastikan order anda telah selesai</li><li>Hubungi admin melalui <a href="https://wa.me/60193263016" target="_blank" rel="noopener">WhatsApp (+60 19-326 3016)</a> untuk mendapatkan kod</li><li>Pergi ke <a href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">halaman review</a> dan masukkan kod tersebut</li></ul>
-      <div class="box warn">Tanpa kod review yang sah, anda tidak boleh menghantar review.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">🎟️</span><span class="t2">Bila dan di mana saya boleh dapat kod review?</span></summary>
-    <div class="a"><p>Kod diberikan oleh admin selepas order anda disahkan selesai. Sila WhatsApp admin di <a href="https://wa.me/60193263016" target="_blank" rel="noopener">wa.me/60193263016</a> dengan maklumat order anda. Kod ini untuk kegunaan anda sahaja, jangan dikongsi kepada orang lain.</p></div>
-  </details>
-
-  <details>
-    <summary><span class="q">❓</span><span class="t2">Apakah tujuan ruang review ini?</span></summary>
-    <div class="a"><p>Supaya pelanggan boleh berkongsi pengalaman sebenar tentang pembelian, perkhidmatan dan kelajuan transaksi. Review yang jujur membantu pembeli lain membuat keputusan dan membantu kami menambah baik perkhidmatan.</p></div>
-  </details>
-
-  <details>
-    <summary><span class="q">🛡️</span><span class="t2">Adakah review saya akan terus dipaparkan?</span></summary>
-    <div class="a">
-      <p><strong>Ya.</strong> Setiap ulasan akan <strong>lulus secara automatik</strong> jika pihak moderasi belum sempat menyemaknya. Moderator akan menyemak ulasan selepas itu.</p>
-      <ul><li>Memastikan tiada link berbahaya atau penipuan</li><li>Melindungi maklumat peribadi pelanggan</li><li>Mengelakkan spam, promosi dan kandungan 18+</li><li>Menjaga kualiti review</li></ul>
-      <div class="box warn">Butang <strong>Lapor</strong> masih tersedia pada review yang belum disemak.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">✏️</span><span class="t2">Adakah moderator boleh edit review saya?</span></summary>
-    <div class="a">
-      <p>Ya. Pihak moderasi <strong>berhak mengedit</strong> ulasan yang mengandungi kesalahan atau pelanggaran. Contohnya:</p>
-      <ul><li>Link yang tertera akan dibuang</li><li>Nombor telefon dan maklumat peribadi lain akan dibuang</li><li>Kata kesat, promosi atau bahagian yang melanggar peraturan akan diedit atau dipadam</li></ul>
-      <div class="box ok">Bahagian review yang baik dan jujur akan dikekalkan.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">🔞</span><span class="t2">Bolehkah saya letak gambar atau video dalam review?</span></summary>
-    <div class="a">
-      <p>Boleh, tetapi bahagian gambar dan video adalah yang <strong>paling tegas</strong>. Hanya kongsi gambar atau video yang berkaitan dengan pengalaman pembelian anda.</p>
-      <ul><li>Gambar atau video berunsur <strong>18+ dilarang sama sekali</strong></li><li>Moderator berhak <strong>memadam gambar atau video secara kekal</strong> jika melanggar peraturan</li><li>Gambar yang memaparkan maklumat peribadi atau link juga boleh dipadam</li></ul>
-      <div class="box bad">Amaran keras: gambar atau video 18+ akan dipadam kekal tanpa notis.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">⏳</span><span class="t2">Review saya sudah dipaparkan tetapi diubah, kenapa?</span></summary>
-    <div class="a"><p>Moderator mungkin telah menyemak dan mengedit review anda kerana terdapat link, nombor telefon atau bahagian lain yang melanggar peraturan. Bahagian lain review anda dikekalkan.</p></div>
-  </details>
-
-  <details>
-    <summary><span class="q">🔗</span><span class="t2">Kenapa tidak boleh letak link website lain?</span></summary>
-    <div class="a"><p>Link luar boleh membawa risiko scam, phishing atau malware, dan dianggap iklan tanpa kebenaran. Moderator berhak membuang link yang tertera dalam review.</p></div>
-  </details>
-
-  <details>
-    <summary><span class="q">🎮</span><span class="t2">Apa jadi jika saya promote akaun game?</span></summary>
-    <div class="a">
-      <p>Bahagian promosi akan dibuang atau review dipadam. Jika orang yang sama mempromosikan <strong>lebih daripada 2 kali</strong>, anda akan dikenakan <strong>ban daripada ruang review</strong>.</p>
-      <div class="box bad">Ruang review hanya untuk maklum balas, bukan untuk jual beli.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">🪪</span><span class="t2">Maklumat apa yang tidak boleh dikongsi?</span></summary>
-    <div class="a">
-      <ul><li>Nama penuh, alamat rumah, nombor telefon</li><li>Nombor kad pengenalan atau pasport</li><li>Maklumat bank, kad atau e-wallet</li><li>Email, kata laluan, kod OTP, ID login game</li></ul>
-      <div class="box warn">H4SX Store tidak akan sekali-kali meminta kata laluan atau OTP anda melalui review.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">✅</span><span class="t2">Apakah yang boleh ditulis dalam review?</span></summary>
-    <div class="a">
-      <ul><li>Pengalaman sebenar membeli di H4SX Store</li><li>Kelajuan proses dan penghantaran</li><li>Layanan pasukan sokongan</li><li>Cadangan penambahbaikan yang membina</li></ul>
-      <div class="box ok">Semua yang jujur, sopan dan berkaitan kedai kami dialu-alukan.</div>
-    </div>
-  </details>
-
-  <details>
-    <summary><span class="q">⭐</span><span class="t2">Adakah review negatif akan dipadam?</span></summary>
-    <div class="a"><p>Tidak. Kritikan yang jujur dan sopan diterima. Review hanya diedit atau dipadam jika mengandungi link luar, promosi, maklumat peribadi, kata kesat, fitnah, spam atau kandungan 18+.</p></div>
-  </details>
-
-  <details>
-    <summary><span class="q">🚨</span><span class="t2">Bagaimana jika saya nampak review yang melanggar peraturan?</span></summary>
-    <div class="a">
-      <p>Tekan butang <strong>Lapor</strong> pada review tersebut dan tulis sebab laporan anda. Pasukan moderasi akan menyemak dan bertindak.</p>
-      <ul><li>Jika moderator mendapati ada pelanggaran, review akan diedit atau dipadam</li><li>Jika moderator telah menyemak dan <strong>tiada pelanggaran</strong>, butang Lapor akan <strong>disembunyikan</strong> pada review itu</li></ul>
-      <div class="box ok">Tidak perlu hubungi admin untuk laporan biasa. Cukup tekan butang Lapor.</div>
-    </div>
-  </details>
-
-  <section class="report">
-    <div>
-      <h2>🚨 Nampak Review Melanggar Peraturan?</h2>
-      <p>Bantu kami jaga komuniti. Anda boleh melapor terus di bahagian review. Butang Lapor masih ada walaupun review lulus automatik dan belum disemak.</p>
-      <ol>
-        <li>Buka halaman <b>Review</b></li>
-        <li>Cari review yang melanggar peraturan</li>
-        <li>Tekan butang <b>Lapor</b></li>
-        <li>Tulis sebab laporan dan hantar</li>
-      </ol>
-    </div>
-    <div class="mock">
-      <div class="rv"><b>Contoh review</b>Review yang mengandungi link, promosi akaun atau maklumat peribadi.<br><span class="lapor">🚩 Lapor</span></div>
-      <small>Butang Lapor ada pada review yang belum disemak</small>
-      <div class="mock2"><b>✅ Telah disemak moderator</b>Tiada pelanggaran dijumpai, jadi butang Lapor disembunyikan.</div>
+  <section class="sec">
+    <div class="hd rv"><small>PROSES</small><h2>Cara Menghantar Review</h2><p>Lima langkah mudah dari order sehingga review dipaparkan.</p></div>
+    <div class="st">
+      <div class="sc rv"><div class="sn">1</div><b>Order Selesai</b><span>Pastikan pesanan anda telah siap diproses.</span></div>
+      <div class="sc rv" style="--d:.08s"><div class="sn">2</div><b>Minta Kod</b><span>Dapatkan kod review daripada admin di WhatsApp.</span></div>
+      <div class="sc rv" style="--d:.16s"><div class="sn">3</div><b>Hantar Review</b><span>Masukkan kod dan tulis review anda.</span></div>
+      <div class="sc rv" style="--d:.24s"><div class="sn">4</div><b>Lulus Automatik</b><span>Terus dipaparkan jika moderator belum sempat semak.</span></div>
+      <div class="sc rv" style="--d:.32s"><div class="sn">5</div><b>Disemak Moderator</b><span>Bahagian melanggar akan diedit atau dipadam.</span></div>
     </div>
   </section>
 
-  <h2>⚠️ Tindakan Jika Melanggar Peraturan</h2>
-  <p class="sub">Peningkatan tindakan mengikut kekerapan pelanggaran.</p>
-  <div class="ladder">
-    <div class="lv"><em>PERINGKAT 1</em><b>Review Diedit / Dipadam</b><span>Amaran diberikan.</span></div>
-    <div class="lv"><em>PERINGKAT 2</em><b>Amaran Terakhir</b><span>Pelanggaran kali kedua.</span></div>
-    <div class="lv hot"><em>PERINGKAT 3</em><b>Ban Review</b><span>Promosi lebih 2x oleh orang yang sama.</span></div>
-    <div class="lv hot"><em>PERINGKAT 4</em><b>Sekat Kekal</b><span>Pelanggaran serius atau berulang, termasuk kandungan 18+.</span></div>
-  </div>
+  <section class="sec">
+    <div class="al rv"><div class="e">🔞</div><div>
+      <h3>AMARAN KERAS: GAMBAR &amp; VIDEO</h3>
+      <p>Berkongsi gambar atau video berunsur 18+ adalah <strong>dilarang sama sekali</strong> dan akan dipadam.</p>
+      <p>Bahagian gambar dan video adalah yang <strong>paling tegas</strong>. Moderator berhak memadam gambar atau video yang melanggar secara <strong>kekal</strong>.</p>
+    </div></div>
+  </section>
 
-  <div class="cta">
-    <h2>Masih ada soalan?</h2>
-    <p>Pasukan sokongan H4SX Store sedia membantu anda. Nombor admin: +60 19-326 3016</p>
-    <a class="btn" href="https://wa.me/60193263016" target="_blank" rel="noopener">Hubungi Admin di WhatsApp</a>
-  </div>
-</div>
+  <section class="sec">
+    <div class="hd rv"><small>PERATURAN UTAMA</small><h2>Perkara yang Dilarang</h2><p>Empat perkara ini tidak dibenarkan dalam ruang review.</p></div>
+    <div class="rl">
+      <div class="rc rv"><div class="ic">🔗</div><h3>Dilarang Kongsi Link</h3><p>Tiada link WhatsApp, Telegram, Discord, FB, IG, TikTok atau laman lain.</p><span class="bd">Link dibuang moderator</span></div>
+      <div class="rc rv" style="--d:.08s"><div class="ic">🎮</div><h3>Dilarang Promote Akaun Game</h3><p>Tiada jual, trade, joki atau iklan akaun game.</p><span class="bd">Lebih 2x = Ban review</span></div>
+      <div class="rc rv" style="--d:.16s"><div class="ic">🪪</div><h3>Dilarang Share Maklumat Peribadi</h3><p>Tiada nombor telefon, alamat, IC, bank, email, password, OTP atau ID game.</p><span class="bd">Dibuang / diedit</span></div>
+      <div class="rc x rv" style="--d:.24s"><div class="ic">🔞</div><h3>Dilarang Gambar / Video 18+</h3><p>Kandungan 18+ atau tidak sesuai tidak dibenarkan langsung.</p><span class="bd">Dipadam kekal</span></div>
+    </div>
+  </section>
 
-<footer><p><a href="https://www.h4sxmy.xyz" target="_blank" rel="noopener">Laman Utama</a> · <a href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">Review</a> · <a href="https://wa.me/60193263016" target="_blank" rel="noopener">WhatsApp Admin</a></p>© H4SX Store. Terima kasih kerana menjaga komuniti yang selamat dan selesa. 💙</footer>
+  <section class="sec">
+    <div class="hd rv"><small>BUTIRAN</small><h2>Terma &amp; Syarat Terperinci</h2><p>Klik pada setiap perkara untuk melihat butiran.</p></div>
+
+    <div class="it open rv"><button class="ab" aria-expanded="true"><span class="ic">🔑</span><span class="t">Bagaimana cara membuat review?</span></button><div class="ap"><div><div class="ai">
+      <p>Anda memerlukan <strong>kod review</strong> yang diberikan admin <strong>selepas order selesai</strong>.</p>
+      <ul><li>Hubungi admin di <a href="https://wa.me/60193263016" target="_blank" rel="noopener">WhatsApp (+60 19-326 3016)</a></li><li>Masukkan kod di <a href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">halaman review</a></li><li>Kod untuk kegunaan anda sahaja, jangan dikongsi</li></ul>
+      <div class="bx a">Tanpa kod review yang sah, anda tidak boleh menghantar review.</div>
+    </div></div></div></div>
+
+    <div class="it rv"><button class="ab" aria-expanded="false"><span class="ic">🛡️</span><span class="t">Adakah review saya terus dipaparkan?</span></button><div class="ap"><div><div class="ai">
+      <p><strong>Ya.</strong> Setiap ulasan <strong>lulus secara automatik</strong> jika moderator belum sempat menyemaknya. Moderator akan menyemak selepas itu.</p>
+      <div class="bx a">Butang <strong>Lapor</strong> masih tersedia pada review yang belum disemak.</div>
+    </div></div></div></div>
+
+    <div class="it rv"><button class="ab" aria-expanded="false"><span class="ic">✏️</span><span class="t">Adakah moderator boleh edit review saya?</span></button><div class="ap"><div><div class="ai">
+      <p>Ya. Moderator <strong>berhak mengedit</strong> ulasan yang mengandungi kesalahan atau pelanggaran:</p>
+      <ul><li>Link yang tertera akan dibuang</li><li>Nombor telefon dan maklumat peribadi lain akan dibuang</li><li>Kata kesat, promosi atau bahagian melanggar akan diedit atau dipadam</li></ul>
+      <div class="bx g">Bahagian review yang jujur dan baik akan dikekalkan.</div>
+    </div></div></div></div>
+
+    <div class="it rv"><button class="ab" aria-expanded="false"><span class="ic">🖼️</span><span class="t">Bolehkah saya letak gambar atau video?</span></button><div class="ap"><div><div class="ai">
+      <p>Boleh, tetapi bahagian ini <strong>paling tegas</strong>. Hanya kongsi gambar atau video berkaitan pengalaman pembelian anda.</p>
+      <ul><li>Kandungan <strong>18+ dilarang sama sekali</strong></li><li>Moderator berhak <strong>memadam gambar atau video secara kekal</strong></li><li>Gambar yang memaparkan maklumat peribadi atau link juga boleh dipadam</li></ul>
+      <div class="bx r">Gambar atau video 18+ dipadam kekal tanpa notis.</div>
+    </div></div></div></div>
+
+    <div class="it rv"><button class="ab" aria-expanded="false"><span class="ic">🎮</span><span class="t">Apa jadi jika saya promote akaun game?</span></button><div class="ap"><div><div class="ai">
+      <p>Bahagian promosi akan dibuang atau review dipadam. Jika orang yang sama mempromosikan <strong>lebih daripada 2 kali</strong>, anda akan di-<strong>ban daripada ruang review</strong>.</p>
+      <div class="bx r">Ruang review hanya untuk maklum balas, bukan jual beli.</div>
+    </div></div></div></div>
+
+    <div class="it rv"><button class="ab" aria-expanded="false"><span class="ic">⭐</span><span class="t">Adakah review negatif akan dipadam?</span></button><div class="ap"><div><div class="ai">
+      <p>Tidak. Kritikan yang jujur dan sopan diterima. Review hanya diedit atau dipadam jika mengandungi link, promosi, maklumat peribadi, kata kesat, fitnah, spam atau kandungan 18+.</p>
+    </div></div></div></div>
+  </section>
+
+  <section class="sec">
+    <div class="rp rv">
+      <div>
+        <h2>🚨 Nampak Review Melanggar?</h2>
+        <p>Lapor terus di bahagian review. Butang Lapor masih ada walaupun review lulus automatik dan belum disemak.</p>
+        <ol><li>Buka halaman <b>Review</b></li><li>Cari review yang melanggar</li><li>Tekan butang <b>Lapor</b></li><li>Tulis sebab dan hantar</li></ol>
+      </div>
+      <div class="mk">
+        <div class="rv2"><b>Contoh review</b>Review mengandungi link, promosi atau maklumat peribadi.<br><span class="lp">🚩 Lapor</span></div>
+        <div class="ok"><b>✅ Telah disemak moderator</b>Tiada pelanggaran dijumpai, jadi butang Lapor disembunyikan.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="hd rv"><small>TINDAKAN</small><h2>Jika Melanggar Peraturan</h2><p>Tindakan meningkat mengikut kekerapan pelanggaran.</p></div>
+    <div class="ld">
+      <div class="lc rv"><em>PERINGKAT 1</em><b>Edit / Padam</b><span>Review diedit atau dipadam, amaran diberikan.</span></div>
+      <div class="lc rv" style="--d:.08s"><em>PERINGKAT 2</em><b>Amaran Terakhir</b><span>Pelanggaran kali kedua.</span></div>
+      <div class="lc h rv" style="--d:.16s"><em>PERINGKAT 3</em><b>Ban Review</b><span>Promosi lebih 2x oleh orang yang sama.</span></div>
+      <div class="lc h rv" style="--d:.24s"><em>PERINGKAT 4</em><b>Sekat Kekal</b><span>Pelanggaran serius atau berulang, termasuk 18+.</span></div>
+    </div>
+  </section>
+
+  <div class="cta rv">
+    <h2>Perlukan penjelasan lanjut?</h2>
+    <p>Pasukan H4SX Store sedia membantu. Nombor admin: +60 19-326 3016</p>
+    <a class="btn w" href="https://wa.me/60193263016" target="_blank" rel="noopener">Hubungi Admin di WhatsApp</a>
+  </div>
+</main>
+
+<footer><a href="https://www.h4sxmy.xyz" target="_blank" rel="noopener">Laman Utama</a> · <a href="https://www.h4sxmy.xyz/review" target="_blank" rel="noopener">Review</a> · <a href="https://wa.me/60193263016" target="_blank" rel="noopener">WhatsApp Admin</a><br>© H4SX Store. Terima kasih kerana menjaga komuniti yang selamat dan selesa. 💙</footer>
+
+<script>
+(function(){
+  try{
+    document.querySelectorAll('.ab').forEach(function(b){
+      b.addEventListener('click',function(){
+        var it=b.parentElement,o=it.classList.toggle('open');
+        b.setAttribute('aria-expanded',o?'true':'false');
+      });
+    });
+    var els=document.querySelectorAll('.rv');
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){
+        es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+      },{threshold:.12});
+      els.forEach(function(el){io.observe(el);});
+      setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},4000);
+    }else{els.forEach(function(el){el.classList.add('in');});}
+  }catch(e){document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});}
+})();
+</script>
 </body>
 </html>
